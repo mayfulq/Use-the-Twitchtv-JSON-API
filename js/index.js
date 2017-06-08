@@ -76,7 +76,7 @@ $(document).ready(function () {
                             let status;
                             let name;
                             if (data.stream !== null) {
-                                logo = data.stream.channel.logo ? data.stream.channel.logo : '../img/timg.jpg';
+                                logo = data.stream.channel.logo ? data.stream.channel.logo : './img/timg.jpg';
                                 name = data.stream.channel.display_name;
                                 status = data.stream.channel.status;
                                 $('#followerInfo').append(createHtml(logo, name, status));
@@ -89,14 +89,14 @@ $(document).ready(function () {
                                 getAjax(url)
                                     .done(
                                         function (data) {
-                                            logo = data.logo ? data.logo : '../img/timg.jpg';
+                                            logo = data.logo ? data.logo : './img/timg.jpg';
                                             name = data.display_name;
                                             status = "OFFLINE";
                                             $('#followerInfo').append(createHtml(logo, name, status));
                                         }
                                     )
                                     .fail(function () {
-                                        logo = '../img/timg.jpg';
+                                        logo = './img/timg.jpg';
                                         name = `${item} is not found`;
                                         status = `${item} is unknow`;
                                         $('#followerInfo').append(createHtml(logo, name, status));
