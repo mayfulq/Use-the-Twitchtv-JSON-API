@@ -1,0 +1,70 @@
+body {
+    background: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.container {
+    padding: 0px 15vw;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+#header a,
+.item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#header a:hover,
+.item a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.col-md-4 {
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.title {
+    font-size: 24px;
+}
+
+span {
+    color: #03a9f4;
+}
+
+.followerInfo {
+    font-size: 18px;
+}
+
+#fccStatus,
+.item {
+    display: none;
+}
